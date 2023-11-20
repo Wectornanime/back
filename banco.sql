@@ -1,6 +1,19 @@
 -- Active: 1686500747749@@127.0.0.1@3306@banco_teste
 
 
+CREATE database if NOT EXISTS banco_teste;
+
+USE banco_teste;
+
+CREATE TABLE if NOT EXISTS meds (
+cod INT NOT NULL AUTO_INCREMENT,
+farmaco VARCHAR(30),
+detentor VARCHAR(30),
+medicamento VARCHAR(30),
+concentracao VARCHAR(30),
+PRIMARY KEY (cod)
+);
+
 INSERT INTO meds (farmaco, detentor, medicamento, concentracao)
 VALUES
 ('abacavir (sulfato)', 'Glaxosmithkline', 'ZIAGENAVIR', '20 mg/mL'),

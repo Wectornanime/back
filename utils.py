@@ -1,4 +1,5 @@
 import mysql.connector
+from os import system
 
 def conn():
     return mysql.connector.connect (
@@ -43,5 +44,7 @@ def searchMed(name):
     return result
 
 
+def limpar():
+    system('cls')
 
 
